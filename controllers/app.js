@@ -70,7 +70,7 @@ app.delete('/:id',jsonParser,  function(req, res){
     id: req.body.id
   });
   
-  
+  //
   console.log(req.body)
 
   mariadb.query('DELETE FROM list WHERE id = ? ',[req.body.id],(result)=>{
